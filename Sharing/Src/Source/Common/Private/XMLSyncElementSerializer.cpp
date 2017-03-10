@@ -186,7 +186,7 @@ namespace // Intentionally Anonymous
 			case FloatType: Deserialize(child, root->CreateFloatElement(name, child->FloatText())); break;
 			case DoubleType: Deserialize(child, root->CreateDoubleElement(name, child->DoubleText())); break;
 			case StringType: Deserialize(child, root->CreateStringElement(name, new XString(child->GetText()))); break;
-			case ObjectType: Deserialize(child, root->CreateObjectElement(name)); break;
+			case ObjectType: Deserialize(child, root->CreateObjectElement(name, new XString("Object"))); break;
 			case Int32ArrayType: Deserialize(child, root->CreateIntArrayElement(name)); break;
 			default:
 				LogError("Element(%s) has unknown element type(%d)", child->Name(), type);

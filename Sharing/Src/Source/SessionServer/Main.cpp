@@ -121,7 +121,6 @@ int _tmain(int argc, _TCHAR* argv[])
 			{
 				std::cin >> input;
 			}
-
 			server.OnStop();
 		}
 		else

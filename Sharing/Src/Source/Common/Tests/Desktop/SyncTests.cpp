@@ -507,7 +507,7 @@ namespace CommonDesktopTests
 
 			ObjectElementPtr inputRoot = inputSync->GetRootObject();
 			{
-				ObjectElementPtr subObject = inputRoot->CreateObjectElement(new XString("obj1"));
+				ObjectElementPtr subObject = inputRoot->CreateObjectElement(new XString("obj1"), new XString("Test"), nullptr);
 				AddTestDataElements(subObject);
 			}
 			AddTestDataElements(inputRoot);
